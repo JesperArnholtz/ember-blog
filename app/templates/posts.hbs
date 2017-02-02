@@ -1,0 +1,25 @@
+<div class="container-fluid">
+     <div class="row-fluid">
+       <div class="span3">
+         <table class='table'>
+           <thead>
+             <tr><th>Recent Posts</th></tr>
+           </thead>
+
+           <tbody>
+             {{#each model as |p|}}
+               <tr>
+                 <td>
+                   {{#link-to 'posts.post' p.id}}{{p.title}} <small class='muted'>by {{p.author.name}}</small>{{/link-to}}
+                 </td>
+               </tr>
+             {{/each}}
+           </tbody>
+         </table>
+       </div>
+
+       <div class="span9">
+         {{outlet}}
+       </div>
+     </div>
+   </div>
