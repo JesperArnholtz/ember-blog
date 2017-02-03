@@ -1,5 +1,6 @@
 {
   "name": "ember-quickstart",
   "dependencies": {
+    "showdown": "^1.6.3"
   }
 }
