@@ -5,7 +5,7 @@ import Ember from 'ember';
   return moment(date).fromNow();
 }*/
 
-export function currentDate() {
+export function formatDate() {
 return Date().toString();
 }
 

@@ -10,7 +10,7 @@
              {{#each model as |p|}}
                <tr>
                  <td>
-                   {{#link-to 'posts.post' p.id}}{{p.title}} <small class='muted'>by {{p.author.name}}</small>{{/link-to}}
+                   {{#link-to 'posts.post' p.id}}{{{p.title}}} <small class='muted'>by {{p.author.name}}</small>{{/link-to}}
                  </td>
                </tr>
              {{/each}}
